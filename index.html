@@ -289,9 +289,8 @@ a { text-decoration: none; color: inherit; }
   color: var(--navy); box-shadow: 0 6px 24px rgba(12,30,60,.11);
   white-space: nowrap;
 }
-.about-badge.top-right  { top: 0; right: -24px; }
 .about-badge.bottom-left{ bottom: 10px; left: -24px; }
-.about-badge .badge-val { font-size: 22px; color: var(--blue); display: block; line-height: 1; margin-bottom: 2px; }
+.about-badge .badge-val { font-size: 19px; color: var(--blue); display: block; line-height: 1.2; margin-bottom: 2px; }
 .about-text p {
   font-size: 15.5px; color: var(--slate); line-height: 1.85; margin-bottom: 22px;
 }
@@ -677,7 +676,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="section">
   <div class="container">
     <div class="about-grid reveal">
@@ -685,18 +683,15 @@ footer strong { color: var(--white); }
         <div class="about-avatar-wrap">
           <div class="about-avatar-bg"></div>
           <div class="about-initials">A</div>
-          <div class="about-badge top-right">
-            <span class="badge-val">500+</span>Records / Cycle
-          </div>
           <div class="about-badge bottom-left">
-	     <span class="badge-val">MCA &amp; M.Sc Stats</span>Completed Dual PG
+            <span class="badge-val">MCA (2026)<br>M.Sc Statistics (2022)</span>Completed Dual PG
           </div>
         </div>
       </div>
       <div class="about-text">
         <div class="section-label">About Me</div>
         <h2 class="section-title">Results-Driven <span>Data Professional</span></h2>
-        <p>I'm a data reporting and analytics professional with 4+ years of hands-on experience in the healthcare sector, specialising in MIS reporting, KPI tracking, and reporting automation. I transform complex datasets into clean, actionable intelligence that empowers leadership decisions.</p>
+        <p>I'm a data reporting and analytics professional with over 4 years of hands-on experience in the healthcare sector, specialising in MIS reporting, KPI tracking, and reporting automation. I transform complex datasets into clean, actionable intelligence that empowers leadership decisions.</p>
         <p>With an MCA now completed and a strong academic foundation in Statistics, I bridge the gap between raw data and business value — using Advanced Excel, Power BI, SQL, and Python to build dashboards, automate workflows, and reduce errors at scale.</p>
         <p>I am actively open to relocating to <strong>Bangalore, Noida,</strong> or <strong>Chandigarh</strong> and eager to grow within a data-driven organisation.</p>
         <div class="about-tags">
@@ -710,7 +705,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" class="section">
   <div class="container">
     <div class="reveal">
@@ -813,7 +807,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience" class="section">
   <div class="container">
     <div class="reveal">
@@ -869,7 +862,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects" class="section">
   <div class="container">
     <div class="reveal">
@@ -878,7 +870,6 @@ footer strong { color: var(--white); }
     </div>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
       <div class="project-card reveal">
         <div class="project-icon-row">
           <div class="project-icon">🔄</div>
@@ -912,7 +903,6 @@ footer strong { color: var(--white); }
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div class="project-card reveal">
         <div class="project-icon-row">
           <div class="project-icon">🏥</div>
@@ -945,7 +935,6 @@ footer strong { color: var(--white); }
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="project-card reveal">
         <div class="project-icon-row">
           <div class="project-icon">📈</div>
@@ -982,7 +971,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section id="education" class="section">
   <div class="container">
     <div class="reveal">
@@ -1028,7 +1016,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="section">
   <div class="container">
     <div class="reveal">
@@ -1101,7 +1088,6 @@ footer strong { color: var(--white); }
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-links">
     <a href="#about">About</a>
@@ -1211,7 +1197,8 @@ function handleFormSubmit() {
   const email   = document.getElementById('cf-email').value.trim();
   const subject = document.getElementById('cf-subject').value.trim();
   const msg     = document.getElementById('cf-msg').value.trim();
-  if (!name || !email || !msg) { alert('Please fill in name, email and message.'); return; }
+  if (!name || !email || !msg) { alert('Please fill in name, email and message.'); return;
+  }
   window.location.href = `mailto:ashur7035@gmail.com?subject=${encodeURIComponent(subject||'Portfolio Enquiry')}&body=${encodeURIComponent('Hi Ashu,\n\n'+msg+'\n\nFrom: '+name+'\nEmail: '+email)}`;
 }
 </script>
